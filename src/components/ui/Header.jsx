@@ -22,31 +22,35 @@ export const Header = () => {
   }, [imageSrc.length]);
 
   return (
-    <header>
+    <header style={{
+      backgroundImage: `url(${imageSrc[currentImage]})`,
+      transition: "opacity 0.5s ease-in-out",
+      opacity: opacity,
+    }} className="bg-cover bg-center">
       <Navbar />
 
       {/* Bagian Background dengan transisi opacity */}
       <div
-        className="relative flex flex-col justify-center items-center h-[500px] gap-5 bg-cover bg-center text-basic_white"
-        style={{
-          backgroundImage: `url(${imageSrc[currentImage]})`,
-          transition: 'opacity 0.5s ease-in-out', // Transisi opacity
-          opacity: opacity, // Menetapkan opacity
-        }}
-      >
+        className="relative flex flex-col justify-center items-center h-[500px] gap-3  text-basic_white"
+        
+        >
+        {/* Overlay gelap */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
-        <div className="relative z-10 inline-flex bg-secondary text-white px-4 py-2 rounded-lg">
-          <h3 className="text-xl ">Selamat Datang di Lanafa Temani</h3>
+        {/* Konten di atas gambar */}
+        <div className="relative z-10 inline-flex justify-center mt-20">
+          <h3 className="s:text-base lg:text-xl text-center inline-flex bg-secondary text-white px-4 py-2 rounded-lg">
+            Selamat Datang di Lanafa Temani
+          </h3>
         </div>
 
-        <div className="relative z-10">
-          <h2 className="text-4xl font-extrabold">
+        <div className="relative z-10 s:w-[90%] lg:w-[70%]">
+          <h2 className="s:text-2xl lg:text-4xl font-extrabold text-center">
             Promosi Pariwisata Kreatif dengan Konten Berkualitas
           </h2>
         </div>
 
-        <div className="relative z-10 w-[600px] text-center">
+        <div className="relative z-10 w-[50%] text-center s:w-[90%] lg:w-[70%]">
           <blockquote className="text-base">
             Jasa iklan dan pembuatan konten kreatif untuk pariwisata. Promosikan
             destinasi unik, budaya otentik, dan pengalaman tak terlupakan.
