@@ -37,7 +37,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`flex items-center px-20 xl:justify-between md:px-10 md:justify-between s:px-5 s:justify-between py-4 fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled ? "lg:bg-white" : "s:bg-transparent"
+        isScrolled ? "lg:bg-white" : "bg-transparent"
       }`}
     >
       <div className="flex items-center gap-4">
@@ -50,38 +50,38 @@ export const Navbar = () => {
         </div>
       </div>
       <div
-        className={`font-medium absolute lg:static left-0 top-[80px] md:w-[550px] s:w-full bg-primary lg:bg-transparent transition-transform duration-300 ease-in-out ${
-          toggleMenu ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0 lg:transition-none z-[2]`}
-      >
-        <ul className="lg:flex lg:flex-row lg:static lg:justify-center lg:items-center text-lg lg:gap-5 md:flex md:flex-col md:px-10 py-5 s:px-5">
-          {navLink.map((menu) => (
-            <li key={menu.name} className="mb-4 lg:mb-0 s:text-center">
-              <Link
-                to={menu.path}
-                className={`hover:text-secondary duration-300 ease-in-out 
+  className={`font-medium absolute lg:static left-0 top-[80px] md:w-[550px] s:w-full bg-primary lg:bg-transparent transition-transform duration-300 ease-in-out ${
+    toggleMenu ? "translate-x-0" : "-translate-x-full"
+  } lg:translate-x-0 lg:transition-none z-[2]`}
+>
+  <ul className="lg:flex lg:flex-row lg:static lg:justify-center lg:items-center text-lg lg:gap-5 md:flex md:flex-col md:px-10 py-5 s:px-5">
+    {navLink.map((menu) => (
+      <li key={menu.name} className="mb-4 lg:mb-0 s:text-center">
+        <Link
+          to={menu.path}
+          className={`hover:text-secondary duration-300 ease-in-out 
             ${
               location.pathname === menu.path
-                ? "text-secondary"
-                : "lg:" + (isScrolled ? "text-black" : "text-basic_white")
+                ? "text-secondary" // Teks aktif
+                : `text-basic_white ${isScrolled ? 'lg:text-black' : ''}` // Default putih, hitam saat di-scroll di lg
             } 
-            ${toggleMenu ? "text-basic_white" : ""}  // Pastikan putih di mobile
           `}
-              >
-                {menu.name}
-              </Link>
-            </li>
-          ))}
-          <li className="justify-center flex">
-            <button className="flex gap-2 bg-primary text-white px-4 py-2 rounded-lg md:order-3 lg:hidden md:hidden relative">
-              <div>
-                <ion-icon name="call"></ion-icon>
-              </div>
-              <span>Hubungi Kami</span>
-            </button>
-          </li>
-        </ul>
-      </div>
+        >
+          {menu.name}
+        </Link>
+      </li>
+    ))}
+    <li className="justify-center flex">
+      <button className="flex gap-2 bg-primary text-white px-4 py-2 rounded-lg md:order-3 lg:hidden md:hidden relative">
+        <div>
+          <ion-icon name="call"></ion-icon>
+        </div>
+        <span>Hubungi Kami</span>
+      </button>
+    </li>
+  </ul>
+</div>
+
 
       <ButtonIcon
         className="flex bg-primary text-white px-4 py-3 rounded-full md:order-3 md:block s:hidden"
@@ -90,7 +90,7 @@ export const Navbar = () => {
         textClassName="ml-2"
       />
       <div
-        className={`lg:hidden text-3xl md:absolute left-[520px]  s:text-white`}
+        className={`lg:hidden text-3xl md:absolute left-[520px]  ${isScrolled?'text-black':'text-basic_white'} `}
         onClick={() => setToggleMenu(toggleMenu ? false : true)}
       >
         <ion-icon name={toggleMenu ? "close" : "menu"}></ion-icon>
