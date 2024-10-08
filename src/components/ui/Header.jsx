@@ -22,16 +22,17 @@ export const Header = () => {
   }, [imageSrc.length]);
 
   return (
-    <header style={{
-      backgroundImage: `url(${imageSrc[currentImage]})`,
-      transition: "opacity 0.5s ease-in-out",
-      opacity: opacity,
-    }} className="bg-cover bg-center">
+    <header>
       <Navbar />
 
       {/* Bagian Background dengan transisi opacity */}
       <div
-        className="relative flex flex-col justify-center items-center h-[500px] gap-3  text-basic_white"
+         className="relative flex flex-col justify-center items-center h-[500px] gap-5 bg-cover bg-center text-basic_white"
+         style={{
+           backgroundImage: `url(${imageSrc[currentImage]})`,
+           transition: 'opacity 0.5s ease-in-out', // Transisi opacity
+           opacity: opacity, // Menetapkan opacity
+         }}
         
         >
         {/* Overlay gelap */}
