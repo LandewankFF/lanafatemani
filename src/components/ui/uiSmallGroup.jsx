@@ -21,15 +21,15 @@ export const Navigation = ({ text, path }) => {
 
 export const TitleSection = ({ section, sectionHead, describe }) => {
   return (
-    <div className="text-center w-[600px] ">
+    <div className="text-center">
       <div className="text-secondary text-xl">
         <span>{section}</span>
       </div>
       <div className="text-[40px] mb-3">
         <h2>{sectionHead}</h2>
       </div>
-      <div className="text-base">
-        <blockquote>{describe}</blockquote>
+      <div className="text-base inline-flex">
+        <blockquote className="w-[600px]">{describe}</blockquote>
       </div>
     </div>
   );
@@ -46,14 +46,14 @@ export const TitleSection = ({ section, sectionHead, describe }) => {
 //   );
 // };
 
-// Component Service
-export const Service = ({ ClassBg, Title, Caption, Price, ListCard }) => {
+// Component price
+export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor }) => {
   return (
     <div
       className={`${ClassBg} text-basic_white w-96 h-auto py-8 px-5 rounded-2xl`}
     >
       <div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 h-[275px]">
           <div className="">
             <h3 className="text-3xl text-center">{Title}</h3>
           </div>
@@ -81,9 +81,10 @@ export const Service = ({ ClassBg, Title, Caption, Price, ListCard }) => {
         </div>
 
         <ButtonIcon
-          className="w-full py-3 justify-center flex flex-row-reverse items-center gap-3 bg-primary rounded-lg mt-5 hover:bg-hover_primary transform duration-300"
+          className={`w-full flex-row-reverse items-center ${bgButton} hover:${hoverBgColor}`}
           icon="arrow-forward"
           text="Pesan Sekarang"
+          textClassName="text-lg font-bold"
         />
       </div>
     </div>

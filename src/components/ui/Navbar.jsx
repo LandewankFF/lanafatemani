@@ -37,7 +37,7 @@ export const Navbar = () => {
   return (
     <nav
       className={`flex items-center px-20 xl:justify-between md:px-10 md:justify-between s:px-5 s:justify-between py-4 fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled ? "lg:bg-white" : "bg-transparent"
+        isScrolled ? "bg-white  " : "bg-transparent"
       }`}
     >
       <div className="flex items-center gap-4">
@@ -90,7 +90,7 @@ export const Navbar = () => {
         textClassName="ml-2"
       />
       <div
-        className={`lg:hidden text-3xl md:absolute left-[520px]  ${isScrolled?'text-black':'text-basic_white'} `}
+        className={`lg:hidden text-3xl md:absolute left-[520px] ${isScrolled?'text-black':'text-basic_white'}`}
         onClick={() => setToggleMenu(toggleMenu ? false : true)}
       >
         <ion-icon name={toggleMenu ? "close" : "menu"}></ion-icon>

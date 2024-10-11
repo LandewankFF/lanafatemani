@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const CardService = ({ backgroundColor, imageSrc, title, description }) => {
+const CardService = ({ backgroundColor, imageSrc, title, description }) => {
   return (
     <div>
-        <div className={`relative ${backgroundColor} text-white w-[397px] h-auto rounded-2xl p-5 text-center overflow-hidden group cursor-pointer`}>
+        <div className={`relative ${backgroundColor} text-white w-[397px] h-[350px] rounded-2xl p-5 text-center overflow-hidden group cursor-pointer`}>
       {/* Pseudo-element for hover effect */}
       <div className="absolute inset-0 bg-primary transform -translate-x-full transition-transform duration-1000 ease-in-out group-hover:translate-x-0 z-0"></div>
       {/* Content inside card */}
@@ -24,3 +24,4 @@ export const CardService = ({ backgroundColor, imageSrc, title, description }) =
     </div>
   )
 }
+export default  CardService;
