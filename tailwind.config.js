@@ -7,10 +7,10 @@ module.exports = {
     extend: {
       colors :{
         primary:'#1F61B9',
-        secondary:'#F67E29',
+        secondary:'#FF730F',
         basic_white: '#EEE5E5',
         hover_primary:'#004AAD',
-        hover_secondary:'F17117'
+        hover_secondary:'#E96000'
       },
       screens: {
         's': '375px'
