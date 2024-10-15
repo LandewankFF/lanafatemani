@@ -28,32 +28,32 @@ export const TitleSection = ({ section, sectionHead, describe }) => {
       <div className="text-[40px] mb-3">
         <h2>{sectionHead}</h2>
       </div>
-      <div className="text-base inline-flex">
-        <blockquote className="w-[600px]">{describe}</blockquote>
+      <div className="text-base inline-flex s:w-[80%] md:w-[50%]">
+        <blockquote className="">{describe}</blockquote>
       </div>
     </div>
   );
 };
 
-// export const ListPakage = ({ icon, text }) => {
-//   return (
-//     <div className="flex gap-4 items-center">
-//       <div className="rounded-full bg-primary inline-flex p-1  text-2xl">
-//         <ion-icon name={icon}></ion-icon>
-//       </div>
-//       <span className="text-base">{text}</span>
-//     </div>
-//   );
-// };
+export const ListPakage = ({ icon, text }) => {
+  return (
+    <div className="flex gap-4 items-center">
+      <div className="rounded-full bg-primary inline-flex p-1  text-2xl">
+        <ion-icon name={icon}></ion-icon>
+      </div>
+      <span className="text-base">{text}</span>
+    </div>
+  );
+};
 
 // Component price
-export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor }) => {
+export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor, bgList }) => {
   return (
     <div
-      className={`${ClassBg} text-basic_white w-96 h-auto py-8 px-5 rounded-2xl`}
+      className={`${ClassBg} text-basic_white w-96 md:h-[630px] s:h-[650px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
     >
       <div>
-        <div className="flex flex-col gap-4 h-[275px]">
+        <div className="flex flex-col s:gap-1 md:gap-4 h-[275px]">
           <div className="">
             <h3 className="text-3xl text-center">{Title}</h3>
           </div>
@@ -65,14 +65,14 @@ export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hover
               {Price}
             </span>
           </div>
-          <div className="bg-basic_white w-full h-[2px]"></div>
+          <div className={`bg-basic_white  h-[2px] md:static s:absolute s:top-[270px] left-5 right-5`}></div>
         </div>
 
-        <div className="flex flex-col gap-3 mt-5">
+        <div className="flex flex-col gap-3 mt-2">
           {/* List requirement package */}
           {ListCard.map((text, index) => (
             <div key={index} className="flex gap-4 items-center">
-              <div className="rounded-full bg-primary inline-flex p-1 text-2xl">
+              <div className={`rounded-full ${bgList} seco inline-flex p-1 text-2xl`}>
                 <ion-icon name="checkmark-outline"></ion-icon>
               </div>
               <span className="text-base">{text}</span>
@@ -81,7 +81,7 @@ export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hover
         </div>
 
         <ButtonIcon
-          className={`w-full flex-row-reverse items-center ${bgButton} hover:${hoverBgColor}`}
+          className={`absolute bottom-5 left-5 right-5  flex-row-reverse items-center ${bgButton} ${hoverBgColor}`}
           icon="arrow-forward"
           text="Pesan Sekarang"
           textClassName="text-lg font-bold"

@@ -3,8 +3,8 @@ import { ButtonIcon } from "./Button";
 import images from "../../assets/images/images";
 import { Navbar } from "./Navbar";
 
-export const Header = () => {
-  const imageSrc = [images.food, images.culture];
+const Header = () => {
+  const imageSrc = [images.food, images.culture, images.island];
   const [currentImage, setCurrentImage] = useState(0);
   const [opacity, setOpacity] = useState(1); // State untuk opacity
 
@@ -61,7 +61,9 @@ export const Header = () => {
 
         <div className="relative z-10">
           <ButtonIcon
-            className="inline-flex flex-row-reverse items-center bg-primary py-2 text-basic_white rounded-full px-3"
+            className="flex-row-reverse"
+            bgColor="bg-primary"
+            hoverBgColor='hover:bg-hover_primary'
             text="Hubungi Kami"
             icon="arrow-forward"
           />
@@ -70,3 +72,4 @@ export const Header = () => {
     </header>
   );
 };
+export default Header

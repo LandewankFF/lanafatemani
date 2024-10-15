@@ -3,10 +3,10 @@ import logo from "../../assets/images/logo.png";
 import { List, Navigation} from "../ui/uiSmallGroup";
 
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer>
-      <div className="bg-secondary md:p-10 flex justify-around flex-wrap md:items-center md:flex-row lg:items-start lg:gap-0 s:gap-3 s:p-5 s:flex-col s:items-center">
+      <div className="bg-hover_secondary md:p-10 flex justify-around flex-wrap md:items-center md:flex-row lg:items-start lg:gap-0 s:gap-3 s:p-5 s:flex-col s:items-center mt-10">
         <div className="text-basic_white w-72">
           <div className="flex justify-center mb-4">
             <img className="w-[135px] h-auto" src={logo} alt="" />
@@ -35,7 +35,7 @@ export const Footer = () => {
           <Navigation text="Destinasi Wisata"></Navigation>
           <Navigation text="Kuliner"></Navigation>
           <Navigation text="Budaya"></Navigation>
-          <Navigation text="Akomodasi"></Navigation>
+          <Navigation text="Souvenir"></Navigation>
         </div>
 
         <div className="w-60">
@@ -66,3 +66,4 @@ export const Footer = () => {
     </footer>
   );
 };
+export default Footer 

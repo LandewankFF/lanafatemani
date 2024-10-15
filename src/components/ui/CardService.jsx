@@ -1,11 +1,11 @@
 import React from 'react'
 
-const CardService = ({ backgroundColor, imageSrc, title, description }) => {
+const CardService = ({ backgroundColor, hoverBgColor, imageSrc, title, description, width, textColor}) => {
   return (
     <div>
-        <div className={`relative ${backgroundColor} text-white w-[397px] h-[350px] rounded-2xl p-5 text-center overflow-hidden group cursor-pointer`}>
+        <div className={`relative ${backgroundColor}  ${textColor} ${width}  overflow-hidden rounded-2xl p-5 text-center group cursor-pointer`}>
       {/* Pseudo-element for hover effect */}
-      <div className="absolute inset-0 bg-primary transform -translate-x-full transition-transform duration-1000 ease-in-out group-hover:translate-x-0 z-0"></div>
+      <div className={`absolute inset-0 ${hoverBgColor}  transform -translate-x-full transition-transform duration-1000 ease-in-out group-hover:translate-x-0 z-0`}></div>
       {/* Content inside card */}
       <div className="relative">
         <div className="mb-5">
