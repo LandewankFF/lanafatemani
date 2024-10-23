@@ -50,7 +50,7 @@ export const ListPakage = ({ icon, text }) => {
 export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor, bgList }) => {
   return (
     <div
-      className={`${ClassBg} text-basic_white w-96 md:h-[630px] s:h-[650px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
+      className={`${ClassBg} text-basic_white w-80 md:h-[630px] s:h-[650px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
     >
       <div>
         <div className="flex flex-col s:gap-1 md:gap-4 h-[275px]">
