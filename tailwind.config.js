@@ -14,6 +14,9 @@ module.exports = {
       },
       screens: {
         's': '375px'
+      },
+      boxShadow: {
+        'custom': '4px 4px 10px rgba(0, 0, 0, 0.2)',
       }
     }
   },
