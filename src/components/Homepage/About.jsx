@@ -4,16 +4,16 @@ import images from "../../assets/images/images";
 
 const About = () => {
   return (
-    <div className=" flex gap-5 md:px-20 s:px-5 mt-10">
+    <div className="flex s:flex-wrap lg:flex-nowrap  gap-5 md:px-20 s:px-5 mt-10 s:justify-center">
       {/* Image */}
-      <div className="w-1/2 flex justify-center flex-wrap ">
-        <div className="w-[450px]">
+      <div className="lg:w-1/2 flex justify-center">
+        <div className="s:w-[300px] lg:w-[450px]">
           <img src={images.about} alt="" />
         </div>
       </div>
 
       {/* Describe About */}
-      <div className=" w-1/2 ">
+      <div className=" lg:w-1/2 ">
         <div className="mb-4 ">
           <Button
             hoverBgColor="hover:bg-hover_secondary"
