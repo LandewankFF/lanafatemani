@@ -68,7 +68,7 @@ const AboutPage = () => {
             />
           </div>
 
-          <div className="flex gap-8 justify-center flex-wrap">
+          <div className="flex gap-8 justify-center flex-wrapnm">
             {/* Data anggota tim */}
             {[
               {
