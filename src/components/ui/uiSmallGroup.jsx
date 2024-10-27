@@ -50,7 +50,7 @@ export const ListPakage = ({ icon, text }) => {
 export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor, bgList }) => {
   return (
     <div
-      className={`${ClassBg} text-basic_white w-80 md:h-[630px] s:h-[650px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
+      className={`${ClassBg} text-basic_white w-80 h-[630px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
     >
       <div>
         <div className="flex flex-col s:gap-1 md:gap-4 h-[275px]">
@@ -61,7 +61,7 @@ export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hover
             <blockquote className="text-center">{Caption}</blockquote>
           </div>
           <div className="">
-            <span className="text-5xl text-center justify-center w-full flex">
+            <span className="text-4xl text-center justify-center w-full flex">
               {Price}
             </span>
           </div>
@@ -81,7 +81,7 @@ export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hover
         </div>
 
         <ButtonIcon
-          className={`absolute bottom-5 left-5 right-5  flex-row-reverse items-center ${bgButton} ${hoverBgColor}`}
+          className={`absolute bottom-3 left-5 right-5  flex-row-reverse items-center ${bgButton} ${hoverBgColor}`}
           icon="arrow-forward"
           text="Pesan Sekarang"
           textClassName="text-lg font-bold"
