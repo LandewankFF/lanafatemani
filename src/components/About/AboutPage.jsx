@@ -68,7 +68,7 @@ const AboutPage = () => {
             />
           </div>
 
-          <div className="flex gap-8 justify-center flex-wrapnm">
+          <div className="flex gap-8 justify-center flex-wrap">
             {/* Data anggota tim */}
             {[
               {
@@ -96,17 +96,17 @@ const AboutPage = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="w-[300px] h-auto rounded-xl shadow-custom pb-5">
+                className="w-[300px] h-auto rounded-xl shadow-custom pb-5 ">
                 
-                <div className="w-auto h-[400px]">
+                <div className="w-auto h-[400px] overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-top transition-transform duration-300 ease-in-out hover:scale-110"
                   />
                 </div>
                 <div className="">
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center pt-3">
                     <h1 className="text-xl font-bold">{member.name}</h1>
                     <span className="text-slate-400">{member.title}</span>
                   </div>
