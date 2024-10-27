@@ -3,6 +3,7 @@ import HeaderNav from '../ui/HeaderNav'
 import CardService from '../ui/CardService'
 import images from "../../assets/images/images"
 import Footer from "../ui/Footer"
+import About from '../Homepage/About'
 
 
 const AboutPage = () => {
@@ -50,6 +51,7 @@ const AboutPage = () => {
               textColor="text-black"
             />
         </div>
+        <About/>
         <Footer/>
     </div>
   )
