@@ -39,19 +39,19 @@ const Header = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
         {/* Konten di atas gambar */}
-        <div className="relative z-10 inline-flex justify-center mt-20">
+        <div className="relative z-10 inline-flex justify-center mt-20" data-aos="fade-up" data-aos-duration="1000" >
           <h3 className="s:text-base lg:text-xl text-center inline-flex bg-secondary text-white px-4 py-2 rounded-lg">
             Selamat Datang di Lanafa Temani
           </h3>
         </div>
 
-        <div className="relative z-10 s:w-[90%] lg:w-[70%]">
+        <div className="relative z-10 s:w-[90%] lg:w-[70%] " data-aos="fade-right" data-aos-duration="1000" >
           <h2 className="s:text-2xl lg:text-4xl font-extrabold text-center">
             Promosi Pariwisata Kreatif dengan Konten Berkualitas
           </h2>
         </div>
 
-        <div className="relative z-10 w-[50%] text-center s:w-[90%] lg:w-[70%]">
+        <div className="relative z-10 w-[50%] text-center s:w-[90%] lg:w-[70%]" data-aos="fade-left" data-aos-duration="1000" >
           <blockquote className="text-base">
             Jasa iklan dan pembuatan konten kreatif untuk pariwisata. Promosikan
             destinasi unik, budaya otentik, dan pengalaman tak terlupakan.
@@ -59,7 +59,7 @@ const Header = () => {
           </blockquote>
         </div>
 
-        <div className="relative z-10">
+        <div className="relative z-10" data-aos="fade-up" data-aos-duration="1000" >
           <ButtonIcon
             className="flex-row-reverse"
             bgColor="bg-primary"

@@ -47,6 +47,7 @@ export const Homepage = () => {
             hoverBgColor="bg-primary"
             width="md:w-[397px]  s:w-[320px] s:h-auto md:h-[350px]"
             textColor="text-basic_white"
+            animationDuration="500"
           />
           <CardService
             backgroundColor="bg-secondary"
@@ -56,6 +57,7 @@ export const Homepage = () => {
             hoverBgColor="bg-primary"
             width="md:w-[397px]  s:w-[320px] s:h-auto md:h-[350px]"
             textColor="text-basic_white"
+            animationDuration="1000"
           />
           <CardService
             backgroundColor="bg-black"
@@ -65,6 +67,7 @@ export const Homepage = () => {
             hoverBgColor="bg-primary"
             width="md:w-[397px]  s:w-[320px] s:h-auto md:h-[350px]"
             textColor="text-basic_white"
+            animationDuration="1500"
           />
         </div>
       </div>
@@ -91,6 +94,7 @@ export const Homepage = () => {
             bgButton="bg-primary"
             hoverBgColor="hover:bg-hover_primary"
             bgList="bg-primary"
+            animationDuration="500"
           />
           <Price
             ClassBg="bg-gradient-to-t from-cyan-600 to-blue-800"
@@ -101,6 +105,7 @@ export const Homepage = () => {
             bgButton="bg-secondary"
             hoverBgColor="hover:bg-hover_secondary"
             bgList="bg-secondary"
+            animationDuration="1000"
           />
           <Price
             ClassBg="bg-black"
@@ -111,6 +116,7 @@ export const Homepage = () => {
             bgButton="bg-primary"
             hoverBgColor="hover:bg-hover_primary"
             bgList="bg-primary"
+            animationDuration="1500"
           />
         </div>
       </div>

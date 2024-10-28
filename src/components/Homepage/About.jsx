@@ -6,14 +6,14 @@ const About = () => {
   return (
     <div className="flex s:flex-wrap lg:flex-nowrap  gap-5 md:px-20 s:px-5 mt-10 s:justify-center">
       {/* Image */}
-      <div className="lg:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex justify-center" data-aos="fade-right" data-aos-duration="2000">
         <div className="s:w-[300px] lg:w-[450px]">
           <img src={images.about} alt="" />
         </div>
       </div>
 
       {/* Describe About */}
-      <div className=" lg:w-1/2 ">
+      <div data-aos="fade-left" data-aos-duration="2000">
         <div className="mb-4 ">
           <Button
             hoverBgColor="hover:bg-hover_secondary"

@@ -22,6 +22,7 @@ const AboutPage = () => {
           hoverBgColor=""
           width="md:w-[250px]  s:w-[320px] s:h-auto md:h-[350px]"
           textColor="text-black"
+          animationDuration="500"
         />
         <CardService
           backgroundColor="none"
@@ -31,6 +32,7 @@ const AboutPage = () => {
           hoverBgColor=""
           width="md:w-[250px]   s:w-[320px] s:h-auto md:h-[350px]"
           textColor="text-black"
+          animationDuration="1000"
         />
         <CardService
           backgroundColor="none"
@@ -40,6 +42,7 @@ const AboutPage = () => {
           hoverBgColor=""
           width="md:w-[250px] s:w-[320px] s:h-auto md:h-[350px]"
           textColor="text-black"
+          animationDuration="1500"
         />
         <CardService
           backgroundColor="none"
@@ -49,6 +52,7 @@ const AboutPage = () => {
           hoverBgColor=""
           width="md:w-[250px] s:w-[320px] s:h-auto md:h-[350px]"
           textColor="text-black"
+          animationDuration="2000"
         />
       </section>
 
@@ -76,8 +80,8 @@ const AboutPage = () => {
                 title: "Konten Kreator",
                 image: images.teamLff,
                 instagram: "https://www.instagram.com/landewank13/",
-                linkedin:
-                  "https://www.linkedin.com/in/landewank-fahreza-firdaus/",
+                linkedin:"https://www.linkedin.com/in/landewank-fahreza-firdaus/",
+                animation:"fade-right"
               },
               {
                 name: "Triana Umi M",
@@ -85,6 +89,7 @@ const AboutPage = () => {
                 image: images.teamLff,
                 instagram: "https://www.instagram.com/trianafa28/",
                 linkedin: "https://www.linkedin.com/in/member2/",
+                animation:"fade-up"
               },
               {
                 name: "Asyafa Ditra AH",
@@ -92,11 +97,12 @@ const AboutPage = () => {
                 image: images.teamLff,
                 instagram: "https://www.instagram.com/deetra_02/",
                 linkedin: "https://www.linkedin.com/in/member3/",
+                animation:"fade-left"
               },
             ].map((member, index) => (
               <div
                 key={index}
-                className="w-[300px] h-auto rounded-xl shadow-custom pb-5 ">
+                className="w-[300px] h-auto rounded-xl shadow-custom pb-5 " data-aos-duration="1000" data-aos={member.animation}>
                 
                 <div className="w-auto h-[400px] overflow-hidden">
                   <img

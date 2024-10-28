@@ -21,7 +21,7 @@ export const Navigation = ({ text, path }) => {
 
 export const TitleSection = ({ section, sectionHead, describe }) => {
   return (
-    <div className="text-center">
+    <div className="text-center " data-aos="fade-up" data-aos-duration="1000">
       <div className="text-secondary text-xl">
         <span>{section}</span>
       </div>
@@ -47,10 +47,11 @@ export const ListPakage = ({ icon, text }) => {
 };
 
 // Component price
-export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor, bgList }) => {
+export const Price = ({ ClassBg, Title, Caption, Price, ListCard,bgButton, hoverBgColor, bgList,animationDuration }) => {
   return (
     <div
-      className={`${ClassBg} text-basic_white w-80 h-[630px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
+      className={`${ClassBg} text-basic_white w-80 md:h-[630px] s:h-[650px] md:py-8 s:px-5 s:py-4 rounded-2xl relative`}
+      data-aos-duration={`${animationDuration}`} data-aos="fade-up" 
     >
       <div>
         <div className="flex flex-col s:gap-1 md:gap-4 h-[275px]">
