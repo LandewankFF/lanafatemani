@@ -15,7 +15,7 @@ const Header = () => {
       setTimeout(() => {
         setCurrentImage((prevImage) => (prevImage + 1) % imageSrc.length);
         setOpacity(1); // Mengembalikan opacity setelah gambar berganti
-      }, 300); // Durasi transisi sesuai dengan durasi setInterval
+      }, 150); // Durasi transisi sesuai dengan durasi setInterval
     }, 5000);
 
     return () => clearInterval(interval);
