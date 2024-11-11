@@ -44,7 +44,7 @@ export const Navbar = () => {
         <div className="order-2 s:hidden md:block">
           <span
             className={`text-2xl  ${
-              isScrolled ? "text-primary" : "text-[#69a6f7]"
+              isScrolled ? "text-primary" : "text-basic_white"
             } `}>Lanafa</span>
           <span className="text-2xl text-secondary">Temani</span>
         </div>
@@ -90,6 +90,7 @@ export const Navbar = () => {
         icon="call"
         text="Hubungi Kami"
         textClassName="ml-2"
+        hoverBgColor="hover:bg-hover_primary"
       />
       <div
         className={`lg:hidden text-3xl md:absolute left-[480px] top-[25px] ${

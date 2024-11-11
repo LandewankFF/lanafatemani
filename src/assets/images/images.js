@@ -9,10 +9,9 @@ import tourism from '../images/tourism.png'
 import souvenir from '../images/souvenir.png'
 import culinary from '../images/culinary.png'
 import dance from '../images/Culture2.png'
-import teamLff from  '../images/Team-Lff.jpg'
 
 const images = {
-    conten_creative, ads, manage, food, culture,island, about, culinary,souvenir,tourism ,dance, teamLff
+    conten_creative, ads, manage, food, culture,island, about, culinary,souvenir,tourism ,dance
 }
 
 export default images;

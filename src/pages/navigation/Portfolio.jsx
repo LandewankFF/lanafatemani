@@ -1,10 +1,9 @@
-import React from 'react'
-import Carousellogo from '../../components/ui/Carousellogo'
+import PortfolioPage  from "../../components/Portfolio/PortfolioPage"
 
 export const Portfolio = () => {
   return (
     <div>
-      <Carousellogo/>
+     <PortfolioPage/>
     </div>
   )
 }

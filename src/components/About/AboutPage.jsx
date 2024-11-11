@@ -2,6 +2,7 @@ import React from "react";
 import HeaderNav from "../ui/HeaderNav";
 import CardService from "../ui/CardService";
 import images from "../../assets/images/images";
+import Founder from "../../assets/images/founder";
 import Footer from "../ui/Footer";
 import About from "../Homepage/About";
 import { TitleSection } from "../ui/uiSmallGroup";
@@ -78,7 +79,7 @@ const AboutPage = () => {
               {
                 name: "Landewank FF",
                 title: "Konten Kreator",
-                image: images.teamLff,
+                image: Founder.teamLff,
                 instagram: "https://www.instagram.com/landewank13/",
                 linkedin:"https://www.linkedin.com/in/landewank-fahreza-firdaus/",
                 animation:"fade-right"
@@ -86,7 +87,7 @@ const AboutPage = () => {
               {
                 name: "Triana Umi M",
                 title: "Spesialis Media Sosial",
-                image: images.teamLff,
+                image: Founder.teamtum,
                 instagram: "https://www.instagram.com/trianafa28/",
                 linkedin: "https://www.linkedin.com/in/member2/",
                 animation:"fade-up"
@@ -94,7 +95,7 @@ const AboutPage = () => {
               {
                 name: "Asyafa Ditra AH",
                 title: "Spesialis IT",
-                image: images.teamLff,
+                image: Founder.teamadh,
                 instagram: "https://www.instagram.com/deetra_02/",
                 linkedin: "https://www.linkedin.com/in/member3/",
                 animation:"fade-left"

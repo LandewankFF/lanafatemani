@@ -88,7 +88,7 @@ export const Homepage = () => {
           <Price
             ClassBg="bg-black"
             Title="Standard"
-            Caption="Paket ini dirancang memperkenalkan destinasi wisata dengan konten visual yang estetik dan menarik. Paket ini ideal untuk menarik perhatian calon pengunjung melalui gambar dan video yang menonjolkan keindahan alam."
+            Caption="Paket ini dirancang memperkenalkan destinasi wisata dengan konten visual yang estetik dan menarik. untuk menarik perhatian calon pengunjung melalui gambar dan video yang menonjolkan keindahan alam."
             Price="Rp1.500.000"
             ListCard={PackageStandard}
             bgButton="bg-primary"
