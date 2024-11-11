@@ -90,6 +90,7 @@ export const Navbar = () => {
         icon="call"
         text="Hubungi Kami"
         textClassName="ml-2"
+        hoverBgColor="hover:bg-hover_primary"
       />
       <div
         className={`lg:hidden text-3xl md:absolute left-[480px] top-[25px] ${

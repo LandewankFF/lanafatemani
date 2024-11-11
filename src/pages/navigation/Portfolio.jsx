@@ -1,11 +1,9 @@
-import React from 'react'
-import Footer  from '../../components/ui/Footer'
-import Header from '../../components/ui/Header'
+import PortfolioPage  from "../../components/Portfolio/PortfolioPage"
+
 export const Portfolio = () => {
   return (
     <div>
-      <Header/>
-      <Footer/>
+     <PortfolioPage/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 
 git add .
-git commit -m "Update : photo team on page about"
+git commit -m "Update : add section on portfolio page part video"
 git push development
 

@@ -11,7 +11,7 @@ export const ButtonIcon = ({ className, icon, text, textClassName, bgColor, hove
 export const Button =(props)=>{
   const {hoverBgColor,text,bgColor  } = props
   return(
-    <button className={` ${bgColor} font-semibold text-xl inline-flex py-3 justify-center gap-3 rounded-lg transform duration-300 px-4 ${hoverBgColor}`}>{text}</button>
+    <button className={` ${bgColor} font-semibold  inline-flex py-3 justify-center gap-3 rounded-lg transform duration-300 px-4 ${hoverBgColor}`}>{text}</button>
   )
 }
 
