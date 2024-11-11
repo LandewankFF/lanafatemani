@@ -44,7 +44,7 @@ export const Navbar = () => {
         <div className="order-2 s:hidden md:block">
           <span
             className={`text-2xl  ${
-              isScrolled ? "text-primary" : "text-[#69a6f7]"
+              isScrolled ? "text-primary" : "text-basic_white"
             } `}>Lanafa</span>
           <span className="text-2xl text-secondary">Temani</span>
         </div>
