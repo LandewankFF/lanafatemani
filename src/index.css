@@ -4,4 +4,10 @@
 body, html {
     overflow-x: hidden;
 }
+
+@layer utilities {
+    .pause-animation {
+      animation-play-state: paused;
+    }
+}
   

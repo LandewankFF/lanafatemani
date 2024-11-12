@@ -30,5 +30,10 @@ module.exports = {
     }
   },
   plugins: [],
+  variants: {
+    extend: {
+      animation: ['hover'], // Menambahkan varian hover ke animation
+    },
+  },
 }
 

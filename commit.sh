@@ -1,6 +1,6 @@
 #!/bin/bash
 
 git add .
-git commit -m "Update : add section on portfolio page part video"
+git commit -m "Update : fix pause on logo slide"
 git push 
 
