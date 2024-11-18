@@ -47,3 +47,6 @@ jobs:
 
     - name: Push Docker image to Docker Hub
       run: docker push ${{ vars.username}} /react-app:latest
+      
+    - name: Show Apps Running
+      run: docker ps
