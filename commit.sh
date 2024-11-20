@@ -1,6 +1,6 @@
 #!/bin/bash
 
 git add .
-git commit -m "Update : footer add link on social media"
+git commit -m "Update : name navigation"
 git push 
 

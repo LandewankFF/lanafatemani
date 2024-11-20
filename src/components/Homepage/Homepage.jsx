@@ -5,7 +5,7 @@ import CardService from "../ui/CardService";
 import images from "../../assets/images/images";
 import Footer  from "../ui/Footer";
 import About from './About'
-import Carousellogo from "../Portfolio/Carousellogo";
+import Carousellogo from "../Portfolio Video/Carousellogo";
 
 export const Homepage = () => {
   const PackageStandard = [

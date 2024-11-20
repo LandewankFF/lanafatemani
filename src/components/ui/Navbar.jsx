@@ -6,8 +6,8 @@ import { ButtonIcon } from "./Button";
 export const Navbar = () => {
   const navLink = [
     { name: "Home", path: "/" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Service", path: "/service" },
+    { name: "Portfolio Vidio", path: "/portfoliovideo" },
+    { name: "Portfolio Foto", path: "/portfoliophoto" },
     { name: "About", path: "/about" },
   ];
 
@@ -53,7 +53,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div
-        className={`font-medium absolute lg:static left-0 top-[80px] md:w-[500px] s:w-full bg-primary lg:bg-transparent transition-transform duration-300 ease-in-out ${
+        className={`font-medium absolute lg:static left-0 top-[80px] md:w-[515px] s:w-full bg-primary lg:bg-transparent transition-transform duration-300 ease-in-out ${
           toggleMenu ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0 lg:transition-none z-[2]`}
       >
