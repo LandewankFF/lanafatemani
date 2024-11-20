@@ -5,6 +5,7 @@ import CardService from "../ui/CardService";
 import images from "../../assets/images/images";
 import Footer  from "../ui/Footer";
 import About from './About'
+import Carousellogo from "../Portfolio/Carousellogo";
 
 export const Homepage = () => {
   const PackageStandard = [
@@ -31,6 +32,7 @@ export const Homepage = () => {
   return (
     <>
       <Header />
+      <Carousellogo />
       {/* Section Layanan */}
       <div className="mt-10">
         <TitleSection
