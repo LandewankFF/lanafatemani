@@ -27,37 +27,38 @@ module.exports = {
       animation: {
         slide: 'slide 30s linear infinite',
       },
+      
     }
   },
   plugins: [
-    // for logo carousell
-    function ({ addComponents }) {
-      addComponents({
-        '.gradient-side': {
-          position: 'relative',
-          '&::before, &::after': {
-            content: '""',
-            position: 'absolute',
-            width: '200px',
-            height: '100%',
-            top: '0',
-            zIndex: '10',
-          },
-          '&::before': {
-            background: 'linear-gradient(to left, rgba(255, 255, 255, 0), white)',
-            left: '0',
-          },
-          '&::after': {
-            background: 'linear-gradient(to right, rgba(255, 255, 255, 0), white)',
-            right: '0',
-          },
-        },
-      });
-    },
+    // // for logo carousell
+    // function ({ addComponents }) {
+    //   addComponents({
+    //     '.gradient-side': {
+    //       position: 'relative',
+    //       '&::before, &::after': {
+    //         content: '""',
+    //         position: 'absolute',
+    //         width: '200px',
+    //         height: '100%',
+    //         top: '0',
+    //         zIndex: '10',
+    //       },
+    //       '&::before': {
+    //         background: 'linear-gradient(to left, rgba(255, 255, 255, 0), white)',
+    //         left: '0',
+    //       },
+    //       '&::after': {
+    //         background: 'linear-gradient(to right, rgba(255, 255, 255, 0), white)',
+    //         right: '0',
+    //       },
+    //     },
+    //   });
+    // },
   ],
   variants: {
     extend: {
-      animation: ['hover'], // Menambahkan varian hover ke animation
+      // animation: ['hover'], // Menambahkan varian hover ke animation
     },
   },
 }
