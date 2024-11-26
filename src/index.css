@@ -9,5 +9,25 @@ body, html {
     .pause-animation {
       animation-play-state: paused;
     }
+    .gradient-side {
+      position: relative;
+    }
+    .gradient-side::before,
+    .gradient-side::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 100%;
+      top: 0;
+      z-index: 10;
+    }
+    .gradient-side::before {
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+      left: 0;
+    }
+    .gradient-side::after {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+      right: 0;
+    }
 }
   

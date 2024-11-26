@@ -66,6 +66,7 @@ const Header = () => {
             hoverBgColor='hover:bg-hover_primary'
             text="Hubungi Kami"
             icon="arrow-forward"
+            onClick={() => window.open('https://wa.me/081227615859', '_blank')}
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/Button";
+import VideoGallery from "./VideoGAllery";
 
 export const Video = () => {
   return (
@@ -51,3 +52,20 @@ export const Video = () => {
     </div>
   );
 };
+
+export const VideoSosmed = () => {
+  const videoSources = [
+    'https://www.tiktok.com/embed/7390328198417943815',
+    'https://www.tiktok.com/embed/7393163089987915016',
+    'https://www.tiktok.com/embed/7361293925224680710',
+    'https://www.tiktok.com/embed/7349473315825732870',
+    'https://www.instagram.com/reel/C9msSRGpR-O/embed',
+    'https://www.instagram.com/reel/C9eHGkAy2Li/embed',
+  ];
+
+  return (
+    <div>
+      <VideoGallery sources={videoSources} />
+    </div>
+  )
+}

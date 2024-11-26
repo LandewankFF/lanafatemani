@@ -1,4 +1,4 @@
-import PortfolioPage  from "../../components/Portfolio/PortfolioPage"
+import PortfolioPage  from "../../components/Portfolio Video/Portfoliovideo"
 
 export const Portfolio = () => {
   return (
