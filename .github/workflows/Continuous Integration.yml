@@ -40,7 +40,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     
     - name: Build Docker image
-      run: docker build -t ${{ vars.username}}/react-app:latest .
+      run: docker build -t ${{ vars.username}}/lanafa:latest .
 
     - name: Show Images
       run: docker images
