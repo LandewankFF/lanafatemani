@@ -40,13 +40,13 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     
     - name: Build Docker image
-      run: docker build -t ${{ vars.username}}/lanafa:latest .
+      run: docker build -t ${{ vars.username}}/lanafatemani:latest .
 
     - name: Show Images
       run: docker images
 
     - name: Push Docker image to Docker Hub
-      run: docker push ${{ vars.username}} /react-app:latest
+      run: docker push ${{ vars.username}} /lanafatemani:latest
       
     - name: Show Apps Running
       run: docker ps
