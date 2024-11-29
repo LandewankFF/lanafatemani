@@ -1,6 +1,6 @@
 #!/bin/bash
 
 git add .
-git commit -m "Update : add  navigation on navbar to whatsapp"
+git commit -m "Update : delete routing portfolio foto"
 git push 
 
