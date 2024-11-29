@@ -7,7 +7,7 @@ export const Navbar = () => {
   const navLink = [
     { name: "Home", path: "/" },
     { name: "Portfolio Vidio", path: "/portfoliovideo" },
-    { name: "Portfolio Foto", path: "/portfoliophoto" },
+    { name: "Portfolio Foto", path: "#" },
     { name: "About", path: "/about" },
   ];
 
