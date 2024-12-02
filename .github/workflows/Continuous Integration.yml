@@ -31,17 +31,17 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v1
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        username: ${{ vars.USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/lanafatemani:latest .
+      run: docker build -t ${{ vars.USERNAME }}/lanafatemani:latest .
 
     - name: Show Images
       run: docker images
 
     - name: Push Docker image to Docker Hub
-      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/lanafatemani:latest
+      run: docker push ${{ vars.USERNAME }}/lanafatemani:latest
       
     - name: Show Apps Running
       run: docker ps
