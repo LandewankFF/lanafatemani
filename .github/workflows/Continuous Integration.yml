@@ -50,3 +50,22 @@ jobs:
       
     - name: Show Apps Running
       run: docker ps
+
+ deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+    - name: SSH to VPS and deploy
+      uses: appleboy/ssh-action@v0.1.3
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        key: ${{ secrets.VPS_PRIVATE_KEY }}
+        port: 22
+        script: |
+          docker pull lffdevops/lanafatemani:latest
+          docker stop lffdevops/lanafatemani:latest
+          docker rm lffdevops/lanafatemani:latest
+          docker run -d --name my-react-app -p 3001:3000 lffdevops/lanafatemani:latest
+          
