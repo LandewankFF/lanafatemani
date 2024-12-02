@@ -56,7 +56,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.SERVER_USERNAME }}
-        key: ${{ secrets.VPS_PRIVATE_KEY }}
+        key: ${{ secrets.PASSWORD }}
         port: 22
         script: |
           docker pull ${{ vars.USERNAME}}/lanafatemani:latest
