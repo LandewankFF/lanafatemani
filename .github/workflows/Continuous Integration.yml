@@ -61,8 +61,7 @@ jobs:
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           script: |
-            sudo su
-            docker pull ${{ vars.USERNAME}}/lanafatemani:latest
-            docker stop lanafatemani || true
-            docker rm lanafatemani || true
-            docker run -d --name lanafatemani -p 3001:3000 --restart always  ${{ vars.USERNAME }}/lanafatemani:latest
+            sudo docker pull ${{ vars.USERNAME}}/lanafatemani:latest
+            sudo docker stop lanafatemani || true
+            sudo docker rm lanafatemani || true
+            sudo docker run -d --name lanafatemani -p 3001:3000 --restart always  ${{ vars.USERNAME }}/lanafatemani:latest
