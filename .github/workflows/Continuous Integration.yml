@@ -58,7 +58,7 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: 22
-        script: |
+        script: whoami
           docker pull ${{ vars.USERNAME}}/lanafatemani:latest
           docker stop lanafatemani || true
           docker rm lanafatemani || true
