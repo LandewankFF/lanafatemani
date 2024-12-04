@@ -31,35 +31,37 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v1
       with:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        username: ${{ secrets.DOCKERHUB_EMAIL }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/lanafatemani:latest .
+      run: docker build -t ${{ vars.username}}/lanafatemani:latest .
 
     - name: Show Images
       run: docker images
 
     - name: Push Docker image to Docker Hub
-      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/lanafatemani:latest
+      run: docker push ${{ vars.username}} /lanafatemani:latest
       
     - name: Show Apps Running
       run: docker ps
 
-  deploy:
+ deploy:
     runs-on: ubuntu-latest
     needs: build
 
     steps:
-    - name: SSH to VPS and deploy
-      uses: appleboy/ssh-action@v0.1.3
+    
+    - name: Remote server and pull docker image
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.SERVER_USERNAME }}
         key: ${{ secrets.VPS_PRIVATE_KEY }}
         port: 22
         script: |
-          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/lanafatemani:latest
-          docker stop my-react-app || true
-          docker rm my-react-app || true
-          docker run -d --name my-react-app -p 3001:3000 ${{ secrets.DOCKERHUB_USERNAME }}/lanafatemani:latest
+          docker pull lffdevops/lanafatemani:latest
+          docker stop lffdevops/lanafatemani:latest
+          docker rm lffdevops/lanafatemani:latest
+          docker run -d --name my-react-app -p 3001:3000 lffdevops/lanafatemani:latest
+          
