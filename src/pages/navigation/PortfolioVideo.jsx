@@ -1,9 +1,9 @@
-import PortfolioPage  from "../../components/Portfolio Video/Portfoliovideo"
+import PortfolioPage from "../../components/Portfolio Video/Portfoliovideo";
 
 export const Portfolio = () => {
   return (
     <div>
-     <PortfolioPage/>
+      <PortfolioPage />
     </div>
-  )
-}
+  );
+};

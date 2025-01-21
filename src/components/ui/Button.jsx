@@ -1,6 +1,6 @@
-export const ButtonIcon = ({ className, icon, text, textClassName, bgColor, hoverBgColor, onClick }) => {
+export const ButtonIcon = ({ className, icon, text, textClassName, bgColor, hoverBgColor, onClick,ariaLabel }) => {
   return (
-    <button className={`${className} ${bgColor} inline-flex py-3 justify-center gap-3 rounded-lg transform duration-300 px-4 items-center ${hoverBgColor}`} onClick={onClick}>
+    <button className={`${className} ${bgColor} inline-flex py-3 justify-center gap-3 rounded-lg transform duration-300 px-4 items-center ${hoverBgColor}`} onClick={onClick} aria-label={ariaLabel}>
       <ion-icon name={icon}></ion-icon>
       <span className={textClassName}>{text}</span>
     </button>

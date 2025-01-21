@@ -7,7 +7,6 @@ export const Navbar = () => {
   const navLink = [
     { name: "Home", path: "/" },
     { name: "Portfolio Vidio", path: "/portfoliovideo" },
-    { name: "Portfolio Foto", path: "#" },
     { name: "About", path: "/about" },
   ];
 
@@ -92,6 +91,7 @@ export const Navbar = () => {
         textClassName="ml-2"
         hoverBgColor="hover:bg-hover_primary"
         onClick={() => window.open('https://wa.me/081227615859', '_blank')}
+        ariaLabel="whatsapp"
       />
       <div
         className={`lg:hidden text-3xl md:absolute left-[480px] top-[25px] ${

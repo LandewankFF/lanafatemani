@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ButtonIcon } from "./Button";
-import images from "../../assets/images/images";
+import images from "../../assets/images/HomeImages";
 import { Navbar } from "./Navbar";
 
 const Header = () => {
@@ -10,12 +10,11 @@ const Header = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Mengurangi opacity sebelum mengganti gambar
       setOpacity(0);
       setTimeout(() => {
         setCurrentImage((prevImage) => (prevImage + 1) % imageSrc.length);
-        setOpacity(1); // Mengembalikan opacity setelah gambar berganti
-      }, 150); // Durasi transisi sesuai dengan durasi setInterval
+        setOpacity(1);
+      }, 150);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -67,6 +66,7 @@ const Header = () => {
             text="Hubungi Kami"
             icon="arrow-forward"
             onClick={() => window.open('https://wa.me/081227615859', '_blank')}
+            ariaLabel="hubungi-kami"
           />
         </div>
       </div>

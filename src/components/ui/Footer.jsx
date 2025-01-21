@@ -51,43 +51,44 @@ const Footer = () => {
             </blockquote>
           </div>
           <div className="flex gap-4 mt-2">
-            {/* WhatsApp */}
             <a
               href="https://wa.me/081227615859"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="WhatsApp"
               className="inline-flex items-center text-basic_white text-2xl p-3 bg-[#049032] cursor-pointer rounded-tl-xl rounded-tr-sm rounded-bl-sm rounded-br-xl transition duration-500 hover:bg-primary"
             >
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/lanafatemani/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
               className="inline-flex items-center text-basic_white text-2xl p-3 bg-[#e92476] cursor-pointer rounded-tl-xl rounded-tr-sm rounded-bl-sm rounded-br-xl transition duration-500 hover:bg-primary"
             >
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            {/* TikTok */}
             <a
               href="https://www.tiktok.com/@lanafatemani"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="TikTok"
               className="inline-flex items-center text-basic_white text-2xl p-3 bg-black cursor-pointer rounded-tl-xl rounded-tr-sm rounded-bl-sm rounded-br-xl transition duration-500 hover:bg-primary"
             >
               <ion-icon name="logo-tiktok"></ion-icon>
             </a>
-            {/* YouTube */}
             <a
               href="https://www.youtube.com/@LanafaTemani"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="YouTube"
               className="inline-flex items-center text-basic_white text-2xl p-3 bg-[#EE1212] cursor-pointer rounded-tl-xl rounded-tr-sm rounded-bl-sm rounded-br-xl transition duration-500 hover:bg-primary"
             >
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </div>
+
         </div>
       </div>
     </footer>

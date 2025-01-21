@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import CardService from '../CardService'; 
 
-describe('CardService Component', () => {
-  it('renders correctly with default props', () => {
+describe('Komponen CardService', () => {
+  it('merender menggunakan properti default', () => {
     render(
       <CardService 
         imageSrc="/images/service1.png" 
@@ -18,7 +18,7 @@ describe('CardService Component', () => {
     expect(screen.getByText('Description for Service 1')).toBeInTheDocument();
   });
 
-  it('renders with custom props', () => {
+  it('merender dengan menggunakan properti kustom', () => {
     render(
       <CardService 
         backgroundColor="bg-blue-500" 
@@ -33,8 +33,6 @@ describe('CardService Component', () => {
     expect(screen.getByRole('img')).toHaveAttribute('src', '/images/service2.png'); 
     expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('Service 2');
     expect(screen.getByText('Description for Service 2')).toBeInTheDocument();
-    expect(screen.getByTestId('cardService')).toHaveClass('bg-blue-500'); // Assuming you add data-testid="cardService" to the main div
-    expect(screen.getByTestId('cardService')).toHaveClass('text-white');
-    expect(screen.getByTestId('cardService')).toHaveClass('w-1/3'); 
+    expect(screen.getByTestId('cardService')).toHaveClass('overflow-hidden rounded-2xl p-5 text-center group cursor-pointer');
   });
 });

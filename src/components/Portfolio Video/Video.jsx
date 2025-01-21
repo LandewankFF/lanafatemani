@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ui/Button";
-import VideoGallery from "./VideoGAllery";
+import VideoGallery from "./VideoGallery";
 
 export const Video = () => {
   return (
@@ -44,7 +44,7 @@ export const Video = () => {
               hoverBgColor="hover:bg-hover_secondary"
               text="Lihat Selengkapnya"
               bgColor="bg-secondary text-white"
-              onClick={() => window.open("https://www.youtube.com", "_blank")}
+              onClick={() => window.open("https://www.youtube.com/watch?v=Q3IsQbupN6M", "_blank")}
             />
           </div>
         </div>

@@ -8,7 +8,7 @@ const About = () => {
       {/* Image */}
       <div className="lg:w-1/2 flex justify-center" data-aos="fade-right" data-aos-duration="2000">
         <div className="s:w-[300px] lg:w-[450px]">
-          <img src={images.about} alt="" />
+          <img alt="image-left" src={images.about} />
         </div>
       </div>
 

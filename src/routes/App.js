@@ -12,7 +12,6 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/portfoliovideo' element={<Portfolio/>}/>
         <Route path='/about' element={<About/>}/>
-        {/* <Route path='/portfoliophoto' element={<Service/>}/> */}
       </Routes>
     </BrowserRouter>
   );
